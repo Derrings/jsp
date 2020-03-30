@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆瓣</title>
+    <link rel="stylesheet" href="./index/index.css">
+    <link rel="stylesheet" href="./index/reset.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- <base target="_blank"> -->
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <h1 class="fl">
+            <a href="https://www.douban.com/">豆瓣网</a>
+        </h1>
+        <div class="search fl">
+            <input type="text" placeholder="书籍、电影、音乐、小组、小站、成员">
+            <div class="searchico"></div>
+        </div>
+        <ul class="fr nav">
+            <li><a href="https://book.douban.com/"></a></li>
+            <li><a href="https://movie.douban.com/"></a></li>
+            <li><a href="https://music.douban.com/"></a></li>
+            <li><a href="https://www.douban.com/location/xiangtan/"></a></li>
+            <li><a href="https://www.douban.com/group/explore"></a></li>
+            <li><a href="https://read.douban.com/"></a></li>
+            <li><a href="https://douban.fm/"></a></li>
+            <li><a href="https://m.douban.com/time/?dt_time_source=douban-web_anonymous_index_top_nav"></a></li>
+            <li><a
+                    href="https://market.douban.com/?utm_campaign=anonymous_top_nav&utm_source=douban&utm_medium=pc_web"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 横幅登录区 -->
+    <div id="banner">
+        <div class="contener">
+            <div class="login mobile fr">
+                <div class="ico"></div>
+                <span class="description">二维码登录</span>
+                <span class="suspan">短信登录/注册</span>
+                <div class="sque"></div>
+                <div class="ma">
+                    <img src="./image/ma.png">
+                    <div>请打开豆瓣客户端扫一扫</div>
+                </div>
+            </div>
+            <div class="login pc fr">
+                <div class="ico"></div>
+                <span class="suspan">扫码登录</span>
+                <div class="sque"></div>
+                <ul class="logPath clearfix mb10">
+                    <li class="choosen">短信登录 / 注册</li>
+                    <li class="unchoosen">密码登录</li>
+                </ul>
+                <div class="path1">
+                    <div class="rule mb10">
+                        请仔细阅读
+                        <a class="acolor" href="https://accounts.douban.com/passport/agreement">豆瓣使用协议、隐私政策</a>
+                    </div>
+                    <form action="">
+                        <div class="box1 inputBox mb10">
+                            <div class="phzone fl">+86</div>
+                            <input class="fl normalbox" type="text" placeholder="手机号" name="phonnumber">
+                        </div>
+                        <div class="box2 inputBox mb10">
+                            <input class="fl normalbox" type="text" placeholder="验证码" name="passnum">
+                            <a class="fr acolor" href="">获取验证码</a>
+                        </div>
+                        <button class="logindb" >登录豆瓣</button>
+                    </form>
+                    <div class="bottominfor">
+                        <p>
+                            <input type="checkbox">
+                            <span>下次自动登录</span>
+                            <a class="fr acolor"
+                                href="https://sec.douban.com/b?r=https%3A%2F%2Fhelp.douban.com%2Faccount%3Fapp%3D1#t1-q5">收不到验证码</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="path2">
+                    <div class="rule mb10 clearfix">
+                        <a class="fr acolor" href="https://accounts.douban.com/passport/get_password">找回密码</a>
+                    </div>
+                    <form action="">
+                        <div class="box1 inputBox mb10 bfc">
+                            <input class="fl normalbox" type="text" placeholder="手机号 / 邮箱" name="phonnumber">
+                        </div>
+                        <div class="box2 inputBox mb10">
+                            <input class="fl normalbox" type="text" placeholder="密码" name="passnum">
+                        </div>
+                        <button class="logindb">登录豆瓣</button>
+                    </form>
+                    <div class="bottominfor">
+                        <p>
+                            <input type="checkbox">
+                            <span class="fs13 color333">下次自动登录</span>
+                            <a class="fr acolor fs13 cursor">海外手机登录</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="path3">
+                    <div class="rule mb10 clearfix">
+                        <a class="fr acolor" href="https://accounts.douban.com/passport/get_password">找回密码</a>
+                    </div>
+                    <form action="">
+                        <div class="box1 inputBox mb10">
+                            <div class="phzone fl">+86</div>
+                            <input class="fl normalbox" type="text" placeholder="手机号" name="phonnumber">
+                        </div>
+                        <div class="box2 inputBox mb10">
+                            <input class="fl normalbox" type="text" placeholder="密码" name="passnum"> 
+                        </div>
+                        <button class="logindb">登录豆瓣</button>
+                    </form>
+                    <div class="bottominfor">
+                        <p>
+                            <input type="checkbox">
+                            <span class="fs13 color333">下次自动登录</span>
+                            <a class="fr acolor fs13 cursor">账号密码手机登录</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="otherPath">
+                    <div class="tip">第三方登录:</div>
+                    <a class="weixin"
+                        href="https://open.weixin.qq.com/connect/qrconnect?appid=wxd9c1c6bbd5d59980&redirect_uri=https%3A%2F%2Fwww.douban.com%2Faccounts%2Fconnect%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=E6w1meeSIBw%2523douban-web%2523https%253A%2F%2Fwww.douban.com%2F#wechat_redirect"></a>
+                    <a class="weibo"
+                        href="https://api.weibo.com/oauth2/authorize?state=E6w1meeSIBw%2521douban-web%2521https%253A//www.douban.com/&redirect_uri=https%3A//accounts.douban.com/connect/sina_weibo/callbackaHR0cHM6Ly9hY2NvdW50cy5kb3ViYW4uY29tL3Bhc3Nwb3J0L2xvZ2luX3BvcHVwP2xvZ2luX3NvdXJjZT1hbm9ueQ%3D%3D&response_type=code&client_id=1994016063&scope=&display=default"></a>
+                </div>
+            </div>
+            <div class="mask">
+                <div class="contain">
+                    <div class="header">
+                        选择国际区号
+                        <span>×</span>
+                    </div>
+                    <div class="wrapper">
+                        <ul class="area">
+                            <li class="checked">
+                                <span>中国大陆</span>
+                                <span>+86</span>
+                            </li>
+                            <li>
+                                <span>中国香港</span>
+                                <span>+852</span>
+                            </li>
+                            <li>
+                                <span>中国澳门</span>
+                                <span>+853</span>
+                            </li>
+                            <li>
+                                <span>中国台湾</span>
+                                <span>+886</span>
+                            </li>
+                            <li>
+                                <span>日本</span>
+                                <span>+81</span>
+                            </li>
+                            <li>
+                                <span>韩国</span>
+                                <span>+82</span>
+                            </li>
+                            <li>
+                                <span>新加坡</span>
+                                <span>+65</span>
+                            </li>
+                            <li>
+                                <span>泰国</span>
+                                <span>+66</span>
+                            </li>
+                            <li>
+                                <span>马来西亚</span>
+                                <span>+60</span>
+                            </li>
+                            <li>
+                                <span>美国</span>
+                                <span>+1</span>
+                            </li>
+                            <li>
+                                <span>加拿大</span>
+                                <span>+1</span>
+                            </li>
+                            <li>
+                                <span>澳大利亚</span>
+                                <span>+61</span>
+                            </li>
+                            <li>
+                                <span>英国</span>
+                                <span>+44</span>
+                            </li>
+                            <li>
+                                <span>德国</span>
+                                <span>+49</span>
+                            </li>
+                            <li>
+                                <span>法国</span>
+                                <span>+33</span>
+                            </li>
+                            <li>
+                                <span>俄罗斯</span>
+                                <span>+7</span>
+                            </li>
+                            <li>
+                                <span>印度</span>
+                                <span>+91</span>
+                            </li>
+                            <li>
+                                <span>新西兰</span>
+                                <span>+64</span>
+                            </li>
+                            <li>
+                                <span>意大利</span>
+                                <span>+39</span>
+                            </li>
+                            <li>
+                                <span>荷兰</span>
+                                <span>+31</span>
+                            </li>
+                            <li>
+                                <span>西班牙</span>
+                                <span>+34</span>
+                            </li>
+                            <li>
+                                <span>瑞典</span>
+                                <span>+46</span>
+                            </li>
+                            <li>
+                                <span>奥地利</span>
+                                <span>+43</span>
+                            </li>
+                            <li>
+                                <span>瑞士</span>
+                                <span>+41</span>
+                            </li>
+                            <li>
+                                <span>立陶宛</span>
+                                <span>+370</span>
+                            </li>
+                            <li>
+                                <span>菲律宾</span>
+                                <span>+63</span>
+                            </li>
+                            <li>
+                                <span>印度尼西亚</span>
+                                <span>+62</span>
+                            </li>
+                            <li>
+                                <span>越南</span>
+                                <span>+84</span>
+                            </li>
+                            <li>
+                                <span>阿联酋</span>
+                                <span>+971</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>>
+            <div class="middletext">
+                <p class="lable">
+                    豆瓣
+                    <span>6.0</span>
+                </p>
+                <div class="click">
+                    <a>下载豆瓣 App</a>
+                    <img src="./image/erweima.png">
+                </div>
+            </div>
+            <div class="xzma">
+                <img src="./image/xzma.png">
+                <p>iOS/Android 扫码直接下载</p>
+            </div>
+        </div>
+    </div>
+    <!-- 热点内容 -->
+    <div id="hotkey" class="wrapper clearfix">
+        <div class="left clearfix fl">
+            <h2 class="h2">
+                热点内容 ·····
+                <span class="c6">(<a class="hota" href="https://www.douban.com/explore/">更多</a>)</span>
+            </h2>
+            <ul class="ambul clearfix fl">
+                <li>
+                    <img src="./image/hotkey1.webp">
+                    <span>
+                        <a class="hota" href="https://www.douban.com/photos/album/1690595730/">必须是红红的 必须是圆圆的</a>54张照片
+                    </span>
+                </li>
+                <li>
+                    <img src="./image/hotkey2.webp">
+                    <span>
+                        <a class="hota" href="https://www.douban.com/photos/album/1678045403/">废墟|废弃剧院</a>39张照片
+                    </span>
+                </li>
+                <li>
+                    <img src="./image/hotkey3.webp">
+                    <span>
+                        <a class="hota" href="https://www.douban.com/photos/album/1677601786/">「墟墓之間」──法國</a>199张照片
+                    </span>
+                </li>
+                <li>
+                    <img src="./image/hotkey4.webp">
+                    <span>
+                        <a class="hota" href="https://www.douban.com/photos/album/65200416/">玩羊毛</a>54张照片
+                    </span>
+                </li>
+            </ul>
+            <ul class="fl menu">
+                <li class="first">
+                    <a class="hota" href="https://www.douban.com/note/752745077/">大吉岭，晴</a>
+                    <div class="author">小葡萄的日记</div>
+                    <p>岁月辽阔，因为有你，人间值得 亲爱的小忽： 前几日有个采访问我，你走后我做的最...</p>
+                </li>
+                <li><a class="hota" href="https://www.douban.com/note/755618621/">牙牙学语</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/753418583/">父母宅建造记</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/752272357/">我不在武汉，我很好，但我不快乐</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/753624725/">噩梦大鹅</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/753803468/">呼市早茶套餐（羊肉烧麦，酥皮焙子，羊杂汤）</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/753233364/">布拉格，一见如故</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/755048149/">我在美国农村文理学院学杀鸡</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/756075929/">“花间隐榭，水际安亭”
+                    ——华南植物园水榭和桂林芦笛岩水榭分析</a></li>
+                <li><a class="hota" href="https://www.douban.com/note/754094558/">与父母相处的四十天</a></li>
+            </ul>
+        </div>
+        <div class="right fr">
+            <img src="./image/hotkey5.jpg">
+            <h2 class="h2">
+                热门话题 ······
+                <span class="c6">(<a class="hota" href="https://www.douban.com/gallery/">去话题广场</a>)</span>
+            </h2>
+            <ul>
+                <li>
+                    <a href="https://www.douban.com/gallery/topic/134477/?from=hot_topic_anony_sns" class="hota">“动森”得意设计大赏</a>
+                    <p>63.6万次浏览</p>
+                </li>
+                <li>
+                    <a href="https://www.douban.com/gallery/topic/8750/?from=hot_topic_anony_sns" class="hota">推荐你喜欢的中国新诗</a>
+                    <p>14.0万次浏览</p>
+                </li>
+                <li>
+                    <a href="https://www.douban.com/gallery/topic/133925/?from=hot_topic_anony_sns" class="hota">我的旧书买卖经历</a>
+                    <p>16.2万次浏览</p>
+                </li>
+                <li>
+                    <a href="https://www.douban.com/gallery/topic/658/?from=hot_topic_anony_sns" class="hota">春食记</a>
+                    <p>426.8万次浏览</p>
+                </li>
+                <li>
+                    <a href="https://www.douban.com/gallery/topic/134593/?from=hot_topic_anony_sns" class="hota">植物的文学意义</a>
+                    <p>13.7万次浏览</p>
+                </li>
+                <li>
+                    <a href="https://www.douban.com/gallery/topic/135293/?from=hot_topic_anony_sns" class="hota">花盆里的动物乐园</a>
+                    <p>新话题 · 317次浏览</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 豆瓣时间 -->
+    <div id="time" class="clearfix">
+        <div class="wrapper">
+            <div class="title fl">
+                <h2>豆瓣时间</h2>
+            </div>
+            <div class="right">
+                <div>
+                    <h2 class="h2">热门专栏······<span class="c6">(<a href="" class="hota">更多</a>)</span></h2>
+                </div>
+                <ul class="fr">
+                    <li>
+                        <a href="https://m.douban.com/time/column/190/?dt_time_source=douban-web_anonymous"><img src="./image/time1.jpg"></a>
+                        <a class="timea"href="https://m.douban.com/time/column/190/?dt_time_source=douban-web_anonymous">罪恶的背后——人人必修的60堂犯罪心理学</a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/189/?dt_time_source=douban-web_anonymous"><img src="./image/time2.jpg"></a>
+                        <a class="timea"href="https://m.douban.com/time/column/189/?dt_time_source=douban-web_anonymous">用性别之尺丈量世界——18堂思想课解读女性问题</a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/188/?dt_time_source=douban-web_anonymous"><img src="./image/time3.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/188/?dt_time_source=douban-web_anonymous">微电影剧作——如何在剧作中运用观众心理学</a>
+                        <span>视频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/187/?dt_time_source=douban-web_anonymous"><img src="./image/time4.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/187/?dt_time_source=douban-web_anonymous">电影产业破壁课——13小时重塑电影世界观</a>
+                        <span>视频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/186/?dt_time_source=douban-web_anonymous"><img src="./image/time5.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/186/?dt_time_source=douban-web_anonymous">不准无聊！精品大师课免费放送</a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/185/?dt_time_source=douban-web_anonymous"><img src="./image/time6.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/185/?dt_time_source=douban-web_anonymous">懂得这些再去穿越——古代天文学里的星空密码</a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/184/?dt_time_source=douban-web_anonymous"><img src="./image/time7.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/184/?dt_time_source=douban-web_anonymous">收获一生之书——马家辉解读影响人生的24部文学经典</a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/180/?dt_time_source=douban-web_anonymous"><img src="./image/time8.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/180/?dt_time_source=douban-web_anonymous">我同世界交流的方式——顶级纪录片导演创作分享课 </a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/178/?dt_time_source=douban-web_anonymous"><img src="./image/time9.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/178/?dt_time_source=douban-web_anonymous">掌控人生剧本——12堂改变命运的思维课</a>
+                        <span>音频专栏</span>
+                    </li>
+                    <li>
+                        <a href="https://m.douban.com/time/column/172/?dt_time_source=douban-web_anonymous"><img src="./image/time10.jpg"></a>
+                        <a class="timea" href="https://m.douban.com/time/column/172/?dt_time_source=douban-web_anonymous">如何读懂美——赤木明登工艺课堂</a>
+                        <span>视频专栏</span>
+                    </li>
+                </ul>
+    
+            </div>
+        </div>
+    </div>
+    <script src="./index/index.js"></script>
+    <script>
+        dom.init();
+    </script>
+</body>
+
+</html>
